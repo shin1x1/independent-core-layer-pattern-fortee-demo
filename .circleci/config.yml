@@ -1,0 +1,18 @@
+version: 2
+jobs:
+  build:
+    machine: true
+    steps:
+      - checkout
+      - run:
+          name: composer install
+          command: docker run -it --rm -v `pwd`:/opt -w /opt composer install --ignore-platform-reqs
+      - run:
+          name: phpunit
+          command: docker run --rm -v `pwd`:/opt -w /opt php:7.4-cli-alpine ./vendor/bin/phpunit
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - build

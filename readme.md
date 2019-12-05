@@ -1,5 +1,7 @@
 # 独立したコアレイヤパターンの適用 - fortee 編 -
 
+[![CircleCI](https://circleci.com/gh/shin1x1/independent-core-layer-pattern-fortee-demo.svg?style=svg)](https://circleci.com/gh/shin1x1/independent-core-layer-pattern-fortee-demo)
+
 * https://speakerdeck.com/shin1x1/fortee-meets-independent-core-layer-pattern
 
 当日ライブコーディングで書いたコードです。before コードは作者の @tomzoh さんから許可を頂いて掲載しています。
